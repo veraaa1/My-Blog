@@ -1,0 +1,17 @@
+ul li{ list-style: none }
+    img{ border:none; }
+    .exc1 a{ margin: 0 5px; }
+    .exc1 a img{ max-width: 200px; }
+    .exc2{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .exc2>.list{
+        
+        margin: 0 auto;
+    }
+    .list li{ display: inline-block; *display: inline; *zoom:1; margin: 0 5px; max-width: 200px; }
+    .list li img{ max-width: 200px; }
+
+
+
