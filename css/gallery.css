@@ -1,12 +1,42 @@
 .crop-img{
-  max-height:150px;
-  max-width:100%;
+ width: 100%;
 }
 
 .large-img{
   max-width:100%;
 }
+.album-main{
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:rgba(0, 0, 0, 0.3) 0px 34px 109px
 
+}
+.album-collections{
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.album-collections>img{
+  height: 100%;
+}
+.album-main .caption{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(256,256,256,0.78);
+
+}
+.caption>h6{
+  text-align: center;
+}
+.caption>p{
+  text-align: center;
+}
 .carousel-img{
     margin: auto;
     padding: 10px;

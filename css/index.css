@@ -8,6 +8,11 @@
 body{
     overflow-x: hidden;
 }
+.title-s{
+    width: 80%;
+    margin-left: 10px;
+    border-bottom: 3px dashed #eee;
+}
 header{
     width: 100%;
     position: fixed;
@@ -64,7 +69,8 @@ header{
 .nav-a{
     color: #656565;
     text-decoration: none;
-    transition: all ease-in-out 0.4s
+    transition: all ease-in-out 0.4s;
+    border-bottom: 2px solid #fff
 }
 .nav-a:hover{
     text-decoration: none;
@@ -77,8 +83,19 @@ header{
     background-size: 100%;
 }
 /* introduce */
+#introduce>div:nth-child(1){
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+}
+#introduce>div:nth-child(1)>h4{
+    width: 40%;
+    text-align: center;
+  
+}
 #introduce{
     width: 100%;
+    margin-top: 15%;
 }
 .introduce-sec{
     width: 95%;
@@ -159,41 +176,27 @@ header{
 }
 .life-time{
     width: 80%;
-    border-left: 3px solid skyblue;
     margin: 0 auto;
 }
 .life-time>ul{
     list-style: none;
+    padding: 0
 }
 .life-time>ul>li{
     width: 100%;
     margin-top: 15px;
 }
 .life-con{
+    border-top: 3px solid #cf4a5c;
     width: 100%;
-    border: 3px dashed skyblue;
     border-radius: 5px;
     position: relative;
     padding: 10px;
+    box-shadow:0 40px 100px rgba(0,0,0,.12);
 }
-.spots{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgba(135, 206, 250, 0.5);
-    position: absolute;
-    left: -60px;
-    top: -8px;
-}
-.spots>span{
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: skyblue;
-    position: absolute;
-    left: 5px;
-    top: 5px;
+.detail>li{
+    border-bottom: 1px solid #eee;
+    padding: 5px 0;
 }
 /* learn */
 .learn{
@@ -205,8 +208,8 @@ header{
     padding-bottom: 50px;
 }
 .learn-con{
-    height: 295px;
-    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
 }
 .pagination{
     margin-top: 10px;
@@ -223,11 +226,39 @@ header{
     justify-content: space-between
     
 }
+.card{
+    border: none;
+}
+.learn-ul{
+    border: none;
+}
+.learn-ul>li{
+    border: none;
+    margin-top: 10px;
+    box-shadow:0 40px 100px rgba(0,0,0,.12);
+    
+}
+.api{
+    display: none;
+}
+.learn-ul>li>div>a{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+.learn-ul>li>div>a>span{
+    display: inline-block;
+    vertical-align: middle;
+    width: 80%;
+    overflow: hidden;
+text-overflow:ellipsis;
+white-space: nowrap;
+}
 .left,.right{
     width: 48%;
 
 }
-/*  */
+/*  art*/
 #art{
     width: 100%;
 }
@@ -253,6 +284,53 @@ header{
     width: 100%;
     margin-top: 15px;
 }
+.a-cnode{
+    display: flex;
+    justify-content: space-around;
+}
+.art-title{
+    width: 100%;
+    box-shadow:0 40px 100px rgba(0,0,0,.12);
+    margin-bottom: 10%;
+}
+.art-title>.one{
+    display: block;
+}
+.products-title{
+    display: none;
+}
+#art>.two,#art>.three{
+    display: none;
+}
+.art-title>ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around
+}
+.art-title>ul a{
+    font-size: 1.5rem;
+}
+.grid-art{
+    display:flex;
+    
+}
+.grid-right{
+    justify-content: flex-end
+}
+.art-title>ul>li>a{
+    display: inline-block;
+    transition: all 0.5s
+}
+.art-title>ul>li>a:focus {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+#albums-tab{
+    border:none;
+    border-bottom: 2px solid #656565
+}
 /* msg */
 #msg{
     width: 100%;
@@ -263,25 +341,34 @@ header{
 }
 .have-com{
     width: 100%;
+    padding-bottom: 15%;
+    border-radius: 4px;
+    overflow: hidden;
 }
 .have-com>ul{
-    width: 80%;
+    width: 100%;
     padding: 0;
     margin: 0 auto;
 }
+
+
 .have-com>p{
-    width: 80%;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 3px 3px 0 0;
-    border: 1px solid #ccc;
+    width: 100%;
+    background-color: #cf4a5c;
+    vertical-align: middle;
+    margin-bottom: 0;
+    padding: 2px 0
+}
+.have-com>p>svg{
+    display: block;
+    padding-left: 10px;
 }
 .have-com>ul>li{
     width: 100%;
     padding: 10px;
-    border:1px solid #ccc;
-    border-top: 0
+    box-shadow:0 -8px 100px rgba(0,0,0,.12);
+    border-top: 0;
+    margin-bottom: 10px;
 }
 .comment-area{
     width: 80%;
@@ -294,48 +381,44 @@ header{
     height: 100px;
     resize: none;
     border-radius: 3px 3px 0 0;
+    box-shadow:0 40px 100px rgba(0,0,0,.12);
+    outline: none;
 }
 .com{
-    padding: 10px;
-    background-color: #eee;
-    border-radius: 3px 3px 0 0;
-    border: 1px solid #ccc;
-    margin: 0;
-    border-bottom: 0;
+    margin: 0
+}
+.com>svg{
+    width: 10%;
+    margin-right: 10px;
 }
 .handle-comment{
     position: absolute;
     right: 10px;
     top: 10px;
-    background-color: rgb(84, 153, 199);
+    background-color: #cf4a5c;
     border-radius: 3px;
     color: #fff;
     padding: 0 5px;
     text-decoration: none;
     transition: all 0.3s;
 }
-.handle-comment:hover{
-    background-color: rgb(41, 137, 228);
-    color: #fff;
-    text-decoration: none;
-}
 .tap{
     width: 100%;
     text-align: center;
     font-size: 14px;
 }
-.contact{
+.contact-private{
     width: 100%;
     background-color: #111;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.contact>p{
+.contact-private>p{
     text-align: center;
     color: #fff;
     margin-top: 15px;
 }
-.contact>p>svg{
+.contact-private>p>svg{
     margin-right: 10px;
 }
 .block-com>img{
@@ -348,7 +431,20 @@ header{
     transition: all 0.5s
 }
 @media screen and (max-width:800px){
-
+.learn-inner .art-title{
+    display: block;
+}
+.learn-inner .art-title ul li h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 5px;
+}
+.learn-inner .art-title ul li:nth-child(1) h3{
+    padding-left: 0px;
+}
+.learn-con{
+    width: 95%;
+}
 .logo-con{
     width: 100%;
 
@@ -379,11 +475,54 @@ header{
     margin-bottom: 25px;
 }
 .mini-header{
+    display: block;
+    width: 100%;
     position: fixed;
     left: 0;
     top: 0;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
+    background-color: #fff;
+
+}
+.mini-header-title{
+    width: 95%; 
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.mini-header-title>h1{
+    display: inline-block;
+    width: 80%;
+    font-size: 4rem;
+    margin: 0;
+    
+}
+.mini-header-title>a{
+    display: inline-block;
+    width: 40px;
+    margin-left: 5%
+}
+.mini-header-title>a>svg{
+    display: block;
+    width: 50%;
+    transition: all 0.4s
+}
+.mini-header>ul{
+    padding: 0;
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.mini-header>ul>li{
+width: 50%;
+padding:5px 12%;
+}
+.mini-header>ul>li>a{
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+}
+.mini-header>ul>li>.nav-a{
+    text-align: left;
 }
 .banner{
 display: none;
@@ -407,10 +546,40 @@ display: none;
 .art-con>.card-art{
     margin-bottom: 10px;
 }
+.grid-art{
+    display:block;
+    
+}
+.products-title{
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+#life .life-time{
+   width: 95%;
+   margin: 0 auto;
+   padding: 0 
+}
+
+.art-title{
+    display: none;
+}
+.grid-right{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+#art>.two,#art>.three{
+    display:block;
+}
 .learn-head{
     width: 36%;
 }
-.contact{
+.contact-private{
     display: block
+}
+ .album-cut .col-md-3{
+    flex: none;
+    width: 26.5%;
 }
 }
