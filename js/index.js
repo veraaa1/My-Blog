@@ -134,7 +134,7 @@ $('#nav-h').change(function (e) {
     e.preventDefault();
     location.href = `#${e.target.value}`
 });
-$(window).load(function(){
+$(window).ready(function(){
     var options = {  
         useEasing: false, 	 	// 使用缓和
         useGrouping: true,	// 使用分组(是否显示千位分隔符,一般为 true)
@@ -145,9 +145,7 @@ $(window).load(function(){
   };
   new CountUp("cet-num", 0, 479, 0, 3, options).start();
   new CountUp("cet-num1", 0, 436, 0, 3, options).start();
-    window.addEventListener("load", function () {
-        d("reveal")
-       }), $(".element").typed({
+     $(".element").typed({
         strings: ["I'm Web Developer!", "I Love Coding..."],
         typeSpeed: 1,
         backSpeed: 1,
@@ -191,6 +189,9 @@ $('.three>.grid-art:nth-child(2)').click(function(){
         window.location.href="https://vera-react-todo.netlify.com/"})
 $('.three>.grid-art:nth-child(3)').click(function(){
             window.location.href="https://veraaa1.github.io/loop-function/"})
+$('.three>.grid-art:nth-child(4)').click(function(){
+                window.location.href="https://veraaa1.github.io/responsive-css3/"})
+            
 $('.learn-inner .art-title ul li:nth-child(1) h3 a').click(function(){
     $('.original').css('display','block')
     $('.api').css('display','none')

@@ -164,7 +164,7 @@ header{
 }
 .gradges{
     display: inline-block;
-    width: 40%;
+    width: 50%;
 }
 /* life */
 #life{
@@ -411,7 +411,7 @@ white-space: nowrap;
     width: 100%;
     background-color: #111;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .contact-private>p{
     text-align: center;
@@ -420,6 +420,7 @@ white-space: nowrap;
 }
 .contact-private>p>svg{
     margin-right: 10px;
+    vertical-align: middle
 }
 .block-com>img{
     width: 30%;
@@ -580,6 +581,6 @@ display: none;
 }
  .album-cut .col-md-3{
     flex: none;
-    width: 26.5%;
+    width: 33%;
 }
 }
